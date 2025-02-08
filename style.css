@@ -1,0 +1,43 @@
+.light {
+  background: url('https://4kwallpapers.com/images/wallpapers/tree-neon-body-of-water-reflection-clear-sky-pink-blue-3840x2160-6569.jpg') no-repeat center center fixed !important;
+  background-size: cover;
+  color: #333;
+  transition: background 0.5s ease-in-out, color 0.3s ease-in-out;
+}
+
+.dark {
+  background: url('https://wallpapers.com/images/hd/dark-theme-background-t62axy1mo8qs4lst.jpg') no-repeat center center fixed !important;
+  background-size: cover;
+  color: #f9f9f9;
+  transition: background 0.5s ease-in-out, color 0.3s ease-in-out;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+#toggle-theme {
+  border: 2px solid green;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.light #toggle-theme:hover {
+  background: yellow;
+  color: black;
+}
+
+.dark #toggle-theme:hover {
+  background: green;
+  color: white;
+}   
+#content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
