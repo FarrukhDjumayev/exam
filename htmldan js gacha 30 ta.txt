@@ -1,0 +1,64 @@
+1. let bilan const ni farqi nima?
+1)let ni o''zgaruvchisi o'zgarishi mumkin const niki esa o'zgarmas bo'ladi
+2. Savol: console.log() nima
+2)js da malumoltarni ekranga chiqarish uchun ishlatiladi (print ga o'xshab)
+3.Savol: null va undefined farqi nima
+3)null - qiymat yo‘q deb belgilanadi, undefined - o‘zgaruvchi qiymatga ega emas.
+4. Savol: Math.random() nima?
+4)Math.random() tasodifiy son qaytaradi (0 va 1 orasida)
+5. Savol: undefined nima
+5)undefined o‘zgaruvchi e'lon qilingan, ammo qiymatga ega bo‘lmagan holat
+6.Savol: let va var farqi nima
+6)let o‘zgaruvchisi blok scope (faqat o‘z blokida amal qiladi), var esa funktsiya scope’da ishlaydi.
+7. Savol: typeof operatori nima
+7)typeof operatori o‘zgaruvchining turini aniqlaydi:
+8.Savol: NaN nima
+8)NaN (Not a Number) qiymati son bo‘lmagan ma'lumotni anglatadi
+9.Savol: Math.floor(5.99) ning natijasi nima bo‘ladi?
+9)Math.floor(5.99) 5 ni qaytaradi, chunki Math.floor() sonni pastga qarab butun songa yaqinlashtiradi.
+10.Savol: Math.ceil(-2.5) ning natijasi nima bo‘ladi
+10)Math.ceil(-2.5) -2 ni qaytaradi, chunki Math.ceil() sonni yuqoriga qarab yaqinlashtiradi
+
+HTML bo‘yicha savollar va javoblar  
+1. HTML nima?  
+   Veb-sahifalarni yaratish uchun belgilash tili.  
+2. DOCTYPE nima uchun kerak?  
+   Brauzerga HTML versiyasini bildiradi va sahifani standart rejimda yuklashga yordam beradi.  
+3. Semantik teglar nima?  
+   Brauzer va SEO uchun tushunarli bo‘lgan teglar: <header>, <article>, <section>.  
+4. <meta> tegi nima?  
+   Sahifa haqida meta ma‘lumotlar beradi (charset, description, viewport).  
+5. SEO uchun HTML qanday optimallashtiriladi?  
+   Semantik teglar, <title>, <meta description>, alt atributi ishlatiladi.  
+6. <div> va <span> farqi nima?  
+   <div> blok element, <span> inline element.  
+7. <section> va <article> farqi nima?  
+   <section> umumiy bo‘lim, <article> mustaqil kontent.  
+8. <img> va <picture> farqi nima?  
+   <picture> moslashuvchan tasvirlar uchun, <img> oddiy rasmlar uchun ishlatiladi.  
+9. alt atributi nima?  
+   Tasvir yuklanmasa, matn ko‘rsatadi va SEO uchun foydali.  
+10. href va src farqi nima?  
+   href havola uchun, src esa resurs manbasi uchun ishlatiladi.  
+11. Form elementlari qanday?  
+    <input>, <textarea>, <select>, <button> va <label>.  
+12. <input> turlari qanday?  
+    text, email, password, number, date, file, checkbox, radio.  
+13. HTML5 da yangi multimedia teglar qaysilar?  
+    <audio> va <video> teglaridan foydalaniladi.  
+14. HTML sahifa yuklanish tezligini oshirish usullari?  
+    Tasvirlarni optimallashtirish, lazy loading, async va defer atributlari.  
+15. data-* atributi nima?  
+    Maxsus ma‘lumotlarni saqlash uchun ishlatiladi va JavaScript orqali foydalaniladi. 
+
+CSS bo‘yicha savollar va javoblar  
+16. CSS nima?  
+    Veb-sahifalarni bezash uchun uslublar berish tili.  
+17. CSS uslublarini qo‘shish usullari qanday?  
+    Inline, internal va external CSS.  
+18. absolute, relative, fixed, sticky farqlari nima?  
+    absolute – ota elementga bog‘liq, relative – o‘z joyidan siljiydi, fixed – ekranda qotib qoladi, sticky – skroll qilganda qotadi.  
+19. Flexbox va Grid farqi nima?  
+    Flexbox – elementlarni qator yoki ustunda joylashtirish uchun, Grid – ikki o‘lchovli joylashuv uchun.  
+20. Dark Mode ni CSS bilan qanday qilish mumkin?  
+    prefers-color-scheme: dark yoki classList.toggle('dark') yordamida.  
