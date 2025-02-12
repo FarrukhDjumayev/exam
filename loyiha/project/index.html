@@ -1,0 +1,110 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ro‘yxatdan o‘tish</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="w-10/12 mx-auto py-10 light overflow-x-hidden">
+    <header class="flex justify-between items-center mb-10">
+      <h1 class="text-3xl font-bold" data-aos="fade-right">Blog Platformasi</h1>
+      <div class="gap-4">
+        <button
+          id="toggle-theme"
+          class="border-2 border-green-600 px-4 py-2 rounded-none hover:bg-green-600 hover:text-white transition"
+          data-aos="fade-down"
+        >
+          🌙 Dark Mode
+        </button>
+      </div>
+    </header>
+
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      class="bg-transparent p-6 sm:p-8 md:p-10 rounded-lg shadow-lg max-w-lg w-full mx-auto border border-rainbow dark:border-gray-700 backdrop-blur-lg"
+    >
+      <h2
+        class="text-2xl md:text-3xl font-bold text-center mb-4 text-gray-700 dark:text-gray-200"
+      >
+        Ro‘yxatdan o‘tish
+      </h2>
+      <form id="registerForm">
+        <input
+          class="w-full bg-gray-500/40 backdrop-blur-md text-gray-700 px-4 py-3 border border-green-600 rounded-3xl cursor-pointer hover:bg-gray-800/30 transition mb-3"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          type="text"
+          id="full_name"
+          placeholder="To'liq ism"
+          required
+        />
+        <input
+          class="w-full bg-gray-500/40 backdrop-blur-md text-gray-700 px-4 py-3 border border-green-600 rounded-3xl cursor-pointer hover:bg-gray-800/30 transition mb-3"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          type="tel"
+          id="phone_number"
+          placeholder="Telefon raqam (+998...)"
+          required
+        />
+        <div class="relative" data-aos="fade-right" data-aos-duration="1000">
+          <input
+            type="password"
+            id="password"
+            placeholder="Parol"
+            class="w-full bg-gray-500/40 backdrop-blur-md text-gray-700 px-4 py-3 border border-green-600 rounded-3xl cursor-pointer hover:bg-gray-800/30 transition mb-3 pr-10"
+          />
+          <i
+            class="fa-solid fa-lock absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer text-gray-600"
+          ></i>
+        </div>
+        <div class="relative" data-aos="fade-left" data-aos-duration="1000">
+          <input
+            type="password"
+            id="password2"
+            placeholder="Parol"
+            class="w-full bg-gray-500/40 backdrop-blur-md text-gray-700 px-4 py-3 border border-green-600 rounded-3xl cursor-pointer hover:bg-gray-800/30 transition mb-3 pr-10"
+          />
+          <i
+            class="fa-solid fa-lock absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer text-gray-600"
+          ></i>
+        </div>
+        <label
+          for="avatar"
+          class="flex items-center justify-center w-full bg-gray-500/40 gap-4 backdrop-blur-md text-black px-4 py-3 border border-green-600 rounded-3xl cursor-pointer hover:bg-gray-800/30 transition mb-3"
+          data-aos="flip-right"
+          data-aos-duration="1000"
+        >
+          <i class="fa-solid fa-image"></i> Avatar yuklash
+        </label>
+        <input type="file" id="avatar" class="hidden" />
+        <button
+        class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition"
+        data-aos="zoom-in"
+        data-aos-duration="800"
+      >
+        Ro‘yxatdan o‘tish
+      </button>
+      </form>
+      <p class="flex items-center justify-center gap-2 text-sm md:text-base mt-3 !text-gray-900 !dark:text-gray-300"
+      data-aos="fade-down"
+      data-aos-duration="800">Allaqachon hisobingiz bormi?<a href="login.html" class="border-2 border-green-500 p-2 text-green-400 hover:underline inline-block">Kirish</a></p>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      duration: 1000;
+    </script>
+    <script src="../js/darkmode.js"></script>
+    <script src="../js/register.js"></script>
+  </body>
+</html>

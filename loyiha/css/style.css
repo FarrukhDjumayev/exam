@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+.blog {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.blog-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    transition: background 0.5s ease-in-out, color 0.3s ease-in-out;
+}
+
+.light {
+    background: url('../images/light_mode_pic.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+.dark {
+    background: url('../images/dark_mode_pic.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f9f9f9;
+}
+
+#toggle-theme {
+    border: 2px solid green;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .light #toggle-theme:hover {
+    background: yellow;
+    color: black;
+  }
+  
+  .dark #toggle-theme:hover {
+    background: green;
+    color: white;
+  }
+  @keyframes rainbow {
+    0% { border-color: red; }
+    25% { border-color: orange; }
+    50% { border-color: yellow; }
+    75% { border-color: green; }
+    100% { border-color: red; }
+}
+
+.border-rainbow {
+    border: 2px solid red;
+    animation: rainbow 3s infinite linear;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .blog {
+        width: 100%;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h3 {
+        font-size: 18px;
+    }
+
+    .blog {
+        padding: 8px;
+    }
+
+    #darkModeToggle {
+        width: 100%;
+    }
+}
